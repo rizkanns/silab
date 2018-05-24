@@ -148,7 +148,7 @@
                             </div>
                             <div class="user-btm-box">
                                 <div class="text-center">
-                                    <button class="btn btn-danger">Delete Profile</button>
+                                    <button class="btn btn-danger " data-target="#deleteModal" type="button" data-toggle="modal">Delete Profile</button>
                                 </div>
                             </div>
                         </div>
@@ -208,6 +208,26 @@
                         </div>
                     </div>
                 </div>
+
+                            <div id="deleteModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title" id="myModalLabel">Delete Akun</h4> </div>
+                                        <div class="modal-body">
+                                            <center>
+                                            <p>Apa anda yakin untuk menghapus?</p><br><br>
+                                            <button type="button" class="btn btn-info waves-effect btn-succes btn-rounde" data-dismiss="modal">Tidak</button>
+                                            <button type="button" class="btn btn-info waves-effect btn-danger btn-rounde" data-dismiss="modal">Hapus</button>
+                                            </center>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Close</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
